@@ -11,6 +11,12 @@ import express from "express";
 
 const app = express();
 
+// logger
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.url}`);
+  next();
+});
+
 // Configure app
 // app.use means all methods
 app.use(express.json()); // parse incoming json on request bodies
@@ -52,7 +58,11 @@ for (const route of frontendRoutes) {
 }
 */
 app.get(/\/.+/, (req, res) => {
-  res.sendFile(import.meta.dirname + "/frontend/dist/index.html");
+  const appPath = import.meta.dirname + "/frontend/dist/index.html";
+  console.log(
+    `Miscellaneous route: ${req.url}, Serving the react app. ${appPath}`
+  );
+  res.sendFile(appPath);
 });
 
 // Routes
