@@ -4,7 +4,7 @@ export default function HomePage() {
   return (
     <div className={style.container}>
       <div className={style.personalInformation}>
-        <img src="/src/assets/person.jpg" alt="" />
+        <img src="/images/person.jpg" alt="" />
         <div className={style.info}>
           <h1>Hey! I'm Sidenote.</h1>
           <p>

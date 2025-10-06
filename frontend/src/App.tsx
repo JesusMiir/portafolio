@@ -40,6 +40,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/project/:id" element={<ProjectPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
+            {/* <Route path="/**" element={}> */}
           </Routes>
         </main>
       </div>
