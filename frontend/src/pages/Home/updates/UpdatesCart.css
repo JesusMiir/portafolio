@@ -1,0 +1,136 @@
+.card {
+  position: relative;
+  display: grid;
+  gap: 16px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), 0 6px 24px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.clickable {
+  cursor: pointer;
+}
+.clickable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06), 0 10px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* TAMAÑOS */
+.sm {
+  grid-template-rows: auto 1fr;
+  padding: 16px;
+  min-height: 140px;
+}
+
+.lg {
+  grid-template-rows: auto 1fr auto;
+  padding: 20px;
+  min-height: 260px;
+}
+
+/* TONOS */
+.toneNeutral {
+  background: #fff;
+}
+.toneWarning {
+  background: #fde68a;
+} /* amarillo suave como la cita de tu ejemplo */
+.tonePrimary {
+  background: #f3f4f6;
+} /* gris clarito */
+
+.media {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.media img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* recorta sin deformar */
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  background: #ffffff;
+  color: #111827;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.12);
+}
+
+.body {
+  display: grid;
+  gap: 6px;
+}
+.subtitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 13px;
+}
+.title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.1;
+  color: #111827;
+}
+.description {
+  margin: 0;
+  color: #4b5563;
+  font-size: 14px;
+}
+
+/* Quote */
+.quote {
+  margin: 8px 0 0 0;
+  color: #374151;
+  font-size: 16px;
+}
+.quoteIcon {
+  font-size: 26px;
+  line-height: 0;
+  opacity: 0.35;
+  margin-right: 6px;
+}
+.quote cite {
+  display: block;
+  margin-top: 8px;
+  color: #6b7280;
+}
+
+/* Footer a dos columnas en lg, una en sm */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  align-items: end;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.sm .footer {
+  grid-template-columns: 1fr;
+}
+
+.footerTitle {
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 12px;
+}
+.footerText {
+  color: #111827;
+  font-weight: 600;
+  font-size: 14px;
+}
