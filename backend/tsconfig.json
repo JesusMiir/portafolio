@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     "esModuleInterop": true,
-    "types": ["node"]
+    "types": ["node"],
+    "module": "nodenext"
   }
 }

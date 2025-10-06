@@ -1,4 +1,4 @@
-import Project, { type ProjectDocument } from "../models/Project";
+import Project, { type ProjectDocument } from "../models/Project.js";
 
 /*
     A good practice is decide on a type that your funcitons will return and be consistent

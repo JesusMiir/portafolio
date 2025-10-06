@@ -1,0 +1,2 @@
+build command: cd frontend && npm run build
+start command: npx tsx backend/src/server

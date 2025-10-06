@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { addXAndY } from "../controllers/mathControllers";
+import { addXAndY } from "../controllers/mathControllers.js";
 const mathRouter = Router();
 
 // 3 ways to receieve data
